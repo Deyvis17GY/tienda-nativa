@@ -347,14 +347,14 @@ main .ventas{
     transition: 0.2s all;
  }
  /* Carrusel de Imagenes */
- /* @keyframes carrusel{
+  @keyframes carrusel{
      50%{
          background-image: url('../img/banner.jpg'); 
      }
      100%{
          background-image: url('../img/banner3.jpg');
      }
- } */
+ }
 
  .ventas .ofertas{
     width: 20%;
