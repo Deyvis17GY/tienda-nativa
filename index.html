@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda Virtual hecha con Javascript Vanilla y CSS3 puro">
+    <title>Tienda Nativa</title>
+    <link rel="icon" type="image/png" href="img/icono.png" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- FUENTES PARA LAS LETRAS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Modal Para ver Productos para Añadir  -->
+    <div class="modal" id="modal">
+        <div class="modal-cuerpo">
+            <div class="title-modal">
+                <span id="cerrarModal"><i class="fas fa-times-circle"></i></span>
+                <h3>Añadir Producto</h3>
+            </div>
+           
+            <form action="" class="form-modal">
+                <div class="img-producto">
+                    <img class="imageProducto" src="img/10.jpg" alt="">
+                </div>
+               
+                <div class="contenedor-form">
+                        <input disabled placeholder="Nombre" class="nombre" type="text" name="" id="nombre">
+                        <input disabled placeholder="Precio" class="precio" type="text" name="" id="precio">
+                        <div class="cantidad-producto">
+                            <label for="cantidad">Cantidad:</label>
+                            <input class="cantidad" value="1" type="number" name="" id="cantidad">
+                        </div>
+                        <input class="añadir" type="button" value="Añadir">
+                </div>
+            </form>
+        </div>
+     </div>
+
+     <!-- Modal de la Cesta ********************** -->
+
+     <div class="modalCarrito" id="modalCarrito">
+         <div class="modal-cuerpo">
+            <div class="title-modal">
+                <span id="cerrarModal2"><i class="fas fa-times-circle"></i></span>
+                <h3>Productos</h3>
+            </div>
+            <div class="form-modal listaCesta">
+                <!-- TEMPLATE QUE AÑADE PRODUCTOS A LA CESTA -->
+                <template id="template-carrito">
+                    <div class="img-producto carrito-img">
+                        <img class="imgCarrito" id="imgCarrito" src="img/10.jpg" alt="">
+                    </div>
+                    <div class="contenedor-form">
+                        <div class="text-carrito">
+                            <p class="nombre-carrito">Hola</p>
+                            <p class="precio-carrito">S/. 8</p>
+                            <p class="cantidad-carrito">3</p>
+                        </div>
+                    </div>
+                </template> 
+                <!-- FIN DEL TEMPLATE -->
+            </div>
+            <button id="comprar" class="comprar">Comprar</button>
+            <h3 style="text-align: center;" id="mensaje-cesta"><p>Cesta Vacia</p></h3>
+        </div>
+     </div>
+
+     <!-- Navegacion************************** -->
+    <header>
+        <nav>
+           <div class="navbar">
+              
+               <ul class="menu">
+                   <li><a href="#">Tienda Nativa</a></li>
+                   <!-- <li><a href="">Contacto</a></li> -->
+               </ul>
+               <div class="buscar">
+                <input id="buscar" type="text" placeholder="Buscar Producto">
+                <span><i class="fas fa-search"></i></span>
+               </div>
+               <div class="botones-cuenta">
+                   <button id="cesta" title="Cesta"><i class="fas fa-cart-plus"></i><span class="cesta-numero" id="cesta-numero">0</span></button>
+                   <button style="display: none;">Cuenta</button>
+                   <button id="salir" title="Salir"><i class="fas fa-sign-out-alt"></i></button>
+               </div>
+           </div>
+        </nav>
+        <br><br><br>
+    </header>
+
+    <!-- Cuerpo del Contenedor ********************************** -->
+    <main>
+        <div class="ventas">
+            <div class="categorias">
+                <p>Categorias</p>
+                <ul>
+                    <li><a id="c-telefonia" href="#"><i class="fas fa-mobile-alt"></i>Telefonia</a></li>
+                    <li><a id="c-moda" href="#"><i class="fas fa-tshirt"></i>Moda Masculina</a></li>
+                    <li><a id="c-electronica" href="#"><i class="fas fa-rss-square"></i>Electronica</a></li>
+                    <li><a id="c-salud" href="#"><i class="fas fa-glasses"></i>Salud y Belleza</a></li>
+                    <li><a id="c-laptop" href="#"><i class="fas fa-laptop"></i>Laptops</a></li>
+                    <li><a id="c-bolsa" href="#"><i class="fas fa-shopping-bag"></i>Bolsas y calzados</a></li>
+                    <li><a id="c-all" href="#"><i class="fas fa-compress-alt"></i>Todos</a></li>
+                </ul>
+            </div>
+            <div class="banner">
+             
+            </div>
+            <div class="ofertas" id="ofertas">
+            </div>
+        </div>
+        
+        <div class="contenedor">
+            <h3 style="font-weight: 500;" id="c-titulo"></h3>
+            <div class="general" id="general">
+              
+                </div>
+            </div>
+        </div>
+
+        <!-- TEMPLATE PARA AÑADIR PRODUCTOS CON JSON -->
+        <template id="template-productos">    
+         <div class="producto">
+        <img class="productoSelecionado" src="" alt="">
+         <span class="nombreProducto">Nombre</span>
+         <p class="precioProducto">precio</p>
+         </div>
+        </template>
+
+        <template id="template-recomendado">
+            <p>Recomendado</p>
+            <img src="" alt="">
+            <span></span>
+            <p class="precio-recomendado"></p>
+        </template>
+       <!-- FIN DEL TEMPLATE -->
+    </main>
+    
+    <!-- PIE DE PAGINA PARA WEB******************************************************** -->
+    <footer id="footer-Max">
+        <div class="contacto-tienda">
+            <div class="direccion-tienda">
+            <p>Dirección</p>
+            <span>Av. Izaguirre Mz A Lote 4 Independencia, Peru</span>
+            </div>
+            <div class="contacto-numero">
+            <p> Contacto</p>
+            <span>tiendanativa@gmail.com</span>
+            </div>
+            <div class="categoria-tienda">
+            <a href="#">Reserva</a><br><a href="#">Ubicación</a><br><a href="#">Contacto</a>
+            </div>
+         </div>
+       <div class="redes-tienda">
+           <ul>
+            <li><a class="facebook" href="#" ><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="instagram" href="#" ><i class="fab fa-instagram"></i></a></li>
+            <li><a class="youtube" href="#" ><i class="fab fa-youtube"></i></a></li>
+           </ul> 
+        </div>
+         <div class="derechos-reservados">
+            <p>Tienda Nativa © Todos los Derechos Reservados 2021</p>
+         </div>
+    </footer>
+    <!-- PIE DE PAGINA PARA CELULARES *********************** -->
+    <div class="botones-cuenta min">
+        <button id="cesta2" title="salir"><i class="fas fa-cart-plus"></i><span class="cesta-numero cesta2" id="cesta-numero2">0</span></button>
+        <button style="display: none;">Cuenta</button>
+        <button id="salir2" title="Salir"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+    <!-- SCRIPT JS QUE HACE TODO DINAMICO -->
+    <script src="js/app.js"></script>
+</body>
+</html>
