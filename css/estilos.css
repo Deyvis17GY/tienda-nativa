@@ -3,18 +3,35 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-   
+    font-family: 'Poppins', sans-serif;/*nsss*/ 
 }
-/* //Variables */
+
+/* //Variables Rot */
 :root{
     --facebook:#3b5999;
     --instagram:#e4405f;
     --youtube:#bd081c;
 }
 
+
 body{
     background-color: #F2F2F2;
+}
+/*Scroll del Body */
+body::-webkit-scrollbar{
+    width: 8px;    
+    height: 8px;   
+}
+body::-webkit-scrollbar-thumb {
+	background:rgba(30, 39, 46,.9);
+	border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+	background: rgba(30, 39, 46,1.0);
+}
+
+body::-webkit-scrollbar-track:active {
+	background-color: rgba(30, 39, 46,.1);
 }
 /* ********************   NAVEGACION ------------ --------- */
 header{
@@ -252,12 +269,52 @@ nav .navbar{
     right:0;
     z-index: 10;
     background-color: #F2F2F2;
-    
+}
+
+/* Estilo modal al hacer scroll */
+.modalCarrito::-webkit-scrollbar {
+	width: 5px;
+    height: 5px;
+}
+
+.modalCarrito::-webkit-scrollbar-thumb {
+	background: rgba(231, 76, 60,.9);
+	border-radius: 5px;
+}
+.modalCarrito::-webkit-scrollbar-thumb:hover {
+	background: rgba(231, 76, 60,1);
+	border-radius: 5px;
+}
+
+.modalCarrito::-webkit-scrollbar-track:active {
+	background-color: rgba(52, 73, 94,0.2);
+}
+.listaCesta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-list{
+    display:flex;
+    height: 150px;
+    width: 100%;
+    margin: 2% 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.carrito-img{
+   width: 50%;
 }
 .imgCarrito{
+    width: 90%;
+    height: 90%;
+    margin: 5% 5%;
     border-radius: 10px;
 }
 .text-carrito {
+    width: 45%;
+    margin: 2%;
     font-weight: 300;
 }
 .comprar{
@@ -347,14 +404,14 @@ main .ventas{
     transition: 0.2s all;
  }
  /* Carrusel de Imagenes */
-  @keyframes carrusel{
+@keyframes carrusel{
      50%{
          background-image: url('../img/banner.jpg'); 
      }
      100%{
          background-image: url('../img/banner3.jpg');
      }
- }
+ } 
 
  .ventas .ofertas{
     width: 20%;
@@ -564,6 +621,9 @@ footer .derechos-reservados{
         grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
+    .modalCarrito{
+        width: 50%;
+    }
     footer .contacto-tienda{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -643,6 +703,10 @@ footer .derechos-reservados{
     .modalCarrito{
         width: 70%;
     }
+    .text-carrito{
+        font-size: 14px;
+        font-weight: 200;
+    }
     
     #footer-Max{
         display: none;
@@ -664,4 +728,24 @@ footer .derechos-reservados{
        padding: 10px;
        
     }
+        /* Estilo modal al hacer scroll responsivo */
+    .modalCarrito::-webkit-scrollbar {
+        width: 4px;
+        height: 2%;
+    }
+
+    .modalCarrito::-webkit-scrollbar-thumb {
+        background: rgba(52, 73, 94,.5);
+        border-radius: 5px;
+    }
+    .modalCarrito::-webkit-scrollbar-thumb:hover {
+        background: rgba(52, 73, 94,0.7);
+        border-radius: 5px;
+    }
+
+    .modalCarrito::-webkit-scrollbar-track:active {
+        background-color: rgba(52, 73, 94,0.2);
+    }
+
+    
 }
