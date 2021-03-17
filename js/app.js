@@ -1,4 +1,3 @@
-
 // FUNCION PARA PODER CAMBIAR LA NAVEGACION AL HACER SCROLL
   window.addEventListener("scroll",function() {
     var header = document.querySelector("nav");
