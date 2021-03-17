@@ -1,0 +1,227 @@
+[
+    {
+        "id":1,
+        "nombre":"Drone",
+        "precio":390,
+        "cantidad":100,
+        "img":"img/1.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":2,
+        "nombre":"Vestido para Dama",
+        "precio":100,
+        "cantidad":100,
+        "img":"img/2.jpg",
+        "categoria":"salud"
+    },
+    {
+        "id":3,
+        "nombre":"Audifono Bluetooh",
+        "precio":35,
+        "cantidad":100,
+        "img":"img/3.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":4,
+        "nombre":"Audifono con cable",
+        "precio":90,
+        "cantidad":100,
+        "img":"img/4.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":5,
+        "nombre":"Yogurt",
+        "precio":8,
+        "cantidad":100,
+        "img":"img/5.jpg",
+        "categoria":"salud"
+    },
+    {
+        "id":6,
+        "nombre":"Muñeca",
+        "precio":45,
+        "cantidad":100,
+        "img":"img/6.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":7,
+        "nombre":"Cargador",
+        "precio":39,
+        "cantidad":100,
+        "img":"img/7.jpg",
+        "categoria":"telefonia"
+    },
+    {
+        "id":8,
+        "nombre":"Portacelular",
+        "precio":20,
+        "cantidad":100,
+        "img":"img/8.jpg",
+        "categoria":"telefonia"
+    },
+    {
+        "id":9,
+        "nombre":"Audifono Apple",
+        "precio":90,
+        "cantidad":100,
+        "img":"img/9.jpg",
+        "categoria":"moda"
+    },
+    {
+        "id":10,
+        "nombre":"Audifono para coche",
+        "precio":55,
+        "cantidad":100,
+        "img":"img/10.jpg",
+        "categoria":"moda"
+    },
+    {
+        "id":11,
+        "nombre":"Mini Camara Web",
+        "precio":145,
+        "cantidad":100,
+        "img":"img/11.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":12,
+        "nombre":"Cargador Inalambrico",
+        "precio":87,
+        "cantidad":101,
+        "img":"img/12.jpg",
+        "categoria":"telefonia"
+    },
+    {
+        "id":13,
+        "nombre":"Router de 7 hilos",
+        "precio":125,
+        "cantidad":100,
+        "img":"img/13.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":14,
+        "nombre":"Smart Wacth",
+        "precio":130,
+        "cantidad":100,
+        "img":"img/14.jpg",
+        "categoria":"moda"
+    },
+    {
+        "id":15,
+        "nombre":"Tv Stick",
+        "precio":180,
+        "cantidad":100,
+        "img":"img/15.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":16,
+        "nombre":"Camara Wifi",
+        "precio":120,
+        "cantidad":100,
+        "img":"img/16.jpg",
+        "categoria":"electronica"
+    },
+    {
+        "id":17,
+        "nombre":"Cargador Solar",
+        "precio":"40",
+        "cantidad":100,
+        "img":"img/17.jpg",
+        "categoria":"telefonia"
+    },
+    {
+        "id":18,
+        "nombre":"Mini Cartera",
+        "precio":80,
+        "cantidad":100,
+        "img":"img/18.jpg",
+        "categoria":"bolsa"
+    },
+    {
+        "id":19,
+        "nombre":"Cartera Lonchera",
+        "precio":180,
+        "cantidad":100,
+        "img":"img/19.jpg",
+        "categoria":"bolsa"
+    },
+    {
+        "id":20,
+        "nombre":"Cartera Black",
+        "precio":220,
+        "cantidad":100,
+        "img":"img/20.jpg",
+        "categoria":"bolsa"
+    },
+    {
+        "id":21,
+        "nombre":"Zandalias niño",
+        "precio":40,
+        "cantidad":100,
+        "img":"img/21.jpg",
+        "categoria":"bolsa"
+    },
+    {
+        "id":22,
+        "nombre":"Laptop Ultrafino de 8 GB",
+        "precio":3420,
+        "cantidad":100,
+        "img":"img/22.jpg",
+        "categoria":"laptop"
+    },
+    {
+        "id":23,
+        "nombre":"Laptop de 12GB ",
+        "precio":4520,
+        "cantidad":100,
+        "img":"img/23.jpg",
+        "categoria":"laptop"
+    },
+    {
+        "id":24,
+        "nombre":"Laptop Ultrafino 2021",
+        "precio":2920,
+        "cantidad":100,
+        "img":"img/24.jpg",
+        "categoria":"laptop"
+    },
+    {
+        "id":25,
+        "nombre":"Peine Sintetico",
+        "precio":120,
+        "cantidad":100,
+        "img":"img/25.jpg",
+        "categoria":"salud"
+    },
+    {
+        "id":26,
+        "nombre":"Saca Rulos 2 en 1",
+        "precio":920,
+        "cantidad":100,
+        "img":"img/26.jpg",
+        "categoria":"salud"
+    },
+    {
+        "id":27,
+        "nombre":"Peines 2 en 1",
+        "precio":320,
+        "cantidad":100,
+        "img":"img/27.jpg",
+        "categoria":"salud"
+    },
+    {
+        "id":28,
+        "nombre":"Peine Ultrafino",
+        "precio":120,
+        "cantidad":100,
+        "img":"img/28.jpg",
+        "categoria":"salud"
+    }
+    
+  ]
