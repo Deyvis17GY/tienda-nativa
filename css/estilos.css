@@ -3,10 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Poppins', sans-serif;/*n*/ 
+    font-family: 'Poppins', sans-serif;/*nsss*/ 
 }
 
-/* //Variables */
+/* //Variables Root */
 :root{
     --facebook:#3b5999;
     --instagram:#e4405f;
